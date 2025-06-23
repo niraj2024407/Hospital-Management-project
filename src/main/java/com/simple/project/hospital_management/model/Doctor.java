@@ -1,6 +1,7 @@
 package com.simple.project.hospital_management.model;
 
 public class Doctor {
+
     private int id;
     private String name;
     private String email;
@@ -45,5 +46,16 @@ public class Doctor {
 
     public void setGender(String gender) {
         this.gender = gender;
+    }
+
+    @Override
+    public String toString() {
+        return "Doctor{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", specialization='" + specialization + '\'' +
+                ", gender='" + gender + '\'' +
+                '}';
     }
 }
