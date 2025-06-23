@@ -27,7 +27,7 @@ public class DoctorController {
 
 
     @PostMapping("/save")
-    public String saveDoctor(@RequestBody Doctor doctorInput){
+    public String saveDoctor(@RequestBody Doctor Input){
         doctorMapDb.put(doctorInput.getId(), doctorInput);
         System.out.println("doctorMapDb is : "+doctorInput);
         return "Doctor saved successfully!";
