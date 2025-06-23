@@ -44,7 +44,7 @@ public class Doctor {
         return gender;
     }
 
-    public void setGender(String ) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 
